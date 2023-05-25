@@ -1,0 +1,9 @@
+8
+Rectangle: length=3.000000,width=4.000000
+Rectangle: length=6.000000,width=8.000000
+Square: side=7.000000
+Square: side=8.000000
+Circle: r=5.000000
+Rectangle: length=4.000000,width=23.000000
+Square: side=12.000000
+Circle: r=17.000000
