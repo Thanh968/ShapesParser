@@ -1,24 +1,26 @@
 #include"ShapeTextDataProvider.h"
 
+ShapeVector* ShapeVector::_instance = 0;
+
 int main() {
 	try {
-		ShapeVector list;
+		ShapeVector* list = ShapeVector::getInstance();
 		int numberOfShapes, numberOfReadedShape;
 		vector<string> linesOfString;
 
 		try {
-			ShapeTextDataProvider::read(list, "output.txt", numberOfShapes, numberOfReadedShape, linesOfString);
+			ShapeTextDataProvider::read(*list, "Shapes.txt", numberOfShapes, numberOfReadedShape, linesOfString);
 		}
 		catch (exception& ex) {
 			throw ex;
 		}
 
 		ShapeTextDataProvider::displayReadInfo(numberOfShapes, numberOfReadedShape, linesOfString);
-		list.sortByArea();
-		list.display();
+		list->sortByArea();
+		list->display();
 
 		try {
-			ShapeTextDataProvider::write(list, "output.txt");
+			ShapeTextDataProvider::write(*list, "output.txt");
 		}
 		catch (exception& ex) {
 			throw ex;
