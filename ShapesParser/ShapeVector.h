@@ -6,6 +6,7 @@
 #include<algorithm>
 
 using std::vector;
+using std::shared_ptr;
 
 //Sử dụng Singleton Design Pattern để cài đặt lớp danh sách các hình
 class ShapeVector:public Object{

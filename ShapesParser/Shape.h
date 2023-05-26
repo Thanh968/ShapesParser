@@ -8,7 +8,8 @@ class Shape:public Object {
 public:
 	virtual double area() = 0;
 	virtual double perimeter() = 0;
-	virtual void output() = 0;
+	virtual void outputColumn() = 0;
+	virtual void outputLine() = 0;
 	virtual string toString();
 };
 

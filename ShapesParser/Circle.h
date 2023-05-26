@@ -13,7 +13,8 @@ public:
 public:
 	double area();
 	double perimeter();
-	void output();
+	void outputColumn();
+	void outputLine();
 	string toString();
 public:
 	Circle& operator=(const Circle& other);

@@ -7,15 +7,16 @@
 #include<map>
 
 using std::map;
+using std::shared_ptr;
 
 
 class ParserFactory: Object {
 private:
-	map<string, IParser*> _prototypes;
+	map<string, shared_ptr<IParser>> _prototypes;
 public:
-	void registerWith(string nameOfShape, IParser* parser);
+	void registerWith(string nameOfShape, shared_ptr<IParser> parser);
 public: 
-	IParser* select(string type);
+	shared_ptr<IParser> select(string type);
 	string toString();
 };
 

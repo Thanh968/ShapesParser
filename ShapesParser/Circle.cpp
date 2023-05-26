@@ -23,7 +23,7 @@ double Circle::perimeter() {
 	return result;
 }
 
-void Circle::output() {
+void Circle::outputColumn() {
 	string radius = to_string(_radius);
 	string perimeter = to_string(this->perimeter());
 	string area = to_string(this->area());
@@ -42,6 +42,13 @@ void Circle::output() {
 		<< "| ban kinh=" << setw(17) << setfill(' ') << radius
 		<< "| chu vi=" << setw(8) << setfill(' ') << perimeter
 		<< "| dien tich=" << setw(8) << setfill(' ') << area;
+}
+
+void Circle::outputLine() {
+	cout << "Hinh tron" << endl;
+	cout << "Ban kinh: " << _radius << endl;
+	cout << "Chu vi: " << perimeter() << endl;
+	cout << "Dien tich: " << area() << endl;
 }
 
 string Circle::toString() {

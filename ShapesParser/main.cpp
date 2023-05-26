@@ -4,7 +4,7 @@ ShapeVector* ShapeVector::_instance = 0;
 
 int main() {
 	try {
-		ShapeVector* list = ShapeVector::getInstance();
+		shared_ptr<ShapeVector> list = shared_ptr<ShapeVector>(ShapeVector::getInstance());
 		int numberOfShapes, numberOfReadedShape;
 		vector<string> linesOfString;
 

@@ -33,7 +33,7 @@ void ShapeVector::push_back(Shape*& item) {
 void ShapeVector::display() {
 	for (int i = 0; i < _list.size(); i++) {
 		cout << '|' << i + 1;
-		_list[i]->output();
+		_list[i]->outputColumn();
 		cout << '|'<< endl;
 	}
 }

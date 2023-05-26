@@ -25,7 +25,7 @@ double Rectangle::perimeter() {
 	return result;
 }
 
-void Rectangle::output() {
+void Rectangle::outputColumn() {
 	string length = to_string(_length);
 	string width = to_string(_width);
 	string perimeter = to_string(this->perimeter());
@@ -49,6 +49,14 @@ void Rectangle::output() {
 		<< ", rong=" << setw(7) << setfill(' ') << width
 		<< "| chu vi=" << setw(8) << setfill(' ') << perimeter
 		<< "| dien tich=" << setw(8) << setfill(' ') << area;
+}
+
+void Rectangle::outputLine() {
+	cout << "Hinh chu nhat" << endl;
+	cout << "Chieu dai: " << _length << endl;
+	cout << "Chieu rong: " << _width << endl;
+	cout << "Chu vi: " << perimeter() << endl;
+	cout << "Dien tich: " << area() << endl;
 }
 
 string Rectangle::toString() {

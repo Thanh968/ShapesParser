@@ -3,9 +3,9 @@
 void ShapeTextDataProvider::read(ShapeVector& dest, string filename, int& numberOfShapes, int& numberOfReadedShape, vector<string>& linesOfData) {
 	ParserFactory factory;
 
-	factory.registerWith("Circle", new CircleParser());
-	factory.registerWith("Square", new SquareParser());
-	factory.registerWith("Rectangle", new RectangleParser());
+	factory.registerWith("Circle", shared_ptr<IParser>(new CircleParser()));
+	factory.registerWith("Square", shared_ptr<IParser>(new SquareParser()));
+	factory.registerWith("Rectangle", shared_ptr<IParser>(new RectangleParser()));
 
 	ifstream reader;
 	reader.open(filename);
@@ -31,7 +31,7 @@ void ShapeTextDataProvider::read(ShapeVector& dest, string filename, int& number
 		getline(in, type, ':');
 		getline(in, data);
 
-		IParser* parser = factory.select(type);
+		shared_ptr<IParser> parser = factory.select(type);
 
 		if (parser != nullptr) {
 			Shape* item = parser->parse(stringstream(data));
