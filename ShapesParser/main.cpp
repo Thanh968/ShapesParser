@@ -17,7 +17,7 @@ int main() {
 
 		ShapeTextDataProvider::displayReadInfo(numberOfShapes, numberOfReadedShape, linesOfString);
 		list->sortByArea();
-		list->display();
+		list->displayLine();
 
 		try {
 			ShapeTextDataProvider::write(*list, "output.txt");

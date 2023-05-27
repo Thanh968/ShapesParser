@@ -2,7 +2,7 @@
 #define SHAPE_VECTOR_H
 
 #include"ParserFactory.h"
-#include<vector>
+#include"DisplayContext.h"
 #include<algorithm>
 
 using std::vector;
@@ -27,7 +27,8 @@ public:
 public:
 	//Cài đặt một số hàm chức năng
 	void push_back( Shape*& value);
-	void display();
+	void displayColumn();
+	void displayLine();
 	void sortByArea();
 	string toString();
 public:

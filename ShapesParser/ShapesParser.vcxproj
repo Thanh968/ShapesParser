@@ -21,7 +21,11 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleParser.h" />
+    <ClInclude Include="DisplayContext.h" />
+    <ClInclude Include="DisplayStrategy.h" />
+    <ClInclude Include="DisplayTable.h" />
     <ClInclude Include="IParser.h" />
+    <ClInclude Include="NormalDisplay.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="Rectangle.h" />
@@ -35,8 +39,12 @@
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="CircleParser.cpp" />
+    <ClCompile Include="DisplayContext.cpp" />
+    <ClCompile Include="DisplayStrategy.cpp" />
+    <ClCompile Include="DisplayTable.cpp" />
     <ClCompile Include="IParser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NormalDisplay.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleParser.cpp" />

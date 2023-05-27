@@ -29,13 +29,16 @@ void ShapeVector::push_back(Shape*& item) {
 	_list.push_back(item);
 }
 
-//In danh sách các hình
-void ShapeVector::display() {
-	for (int i = 0; i < _list.size(); i++) {
-		cout << '|' << i + 1;
-		_list[i]->outputColumn();
-		cout << '|'<< endl;
-	}
+//In danh sách các hình dưới dạng bảng
+void ShapeVector::displayColumn() {
+	DisplayContext context(make_unique<DisplayTable>());
+	context.display(_list);
+}
+
+//In thông tin không theo dạng bảng
+void ShapeVector::displayLine() {
+	DisplayContext context(make_unique<NormalDisplay>());
+	context.display(_list);
 }
 
 //Sắp xếp danh sách tăng dần theo diện tích
