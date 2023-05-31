@@ -15,6 +15,7 @@ void ShapeTextDataProvider::read(ShapeVector& dest, string filename, int& number
 	factory.registerWith("Circle", shared_ptr<IParser>(new CircleParser()));
 	factory.registerWith("Square", shared_ptr<IParser>(new SquareParser()));
 	factory.registerWith("Rectangle", shared_ptr<IParser>(new RectangleParser()));
+	factory.registerWith("Triangle", shared_ptr<IParser>(new TriangleParser()));
 
 	ifstream reader;
 	reader.open(filename);

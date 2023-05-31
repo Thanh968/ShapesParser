@@ -77,7 +77,7 @@ void Square::outputColumn() {
 	area = area.substr(0, pos + 3);
 
 	cout << "|" << left << setw(20) << setfill(' ') << "Hinh vuong"
-		<< "| Canh=" << setw(21) << setfill(' ') << side
+		<< "| Canh=" << setw(23) << setfill(' ') << side
 		<< "| chu vi=" << setw(8) << setfill(' ') << perimeter
 		<< "| dien tich=" << setw(8) << setfill(' ') << area;
 }

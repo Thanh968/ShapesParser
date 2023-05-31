@@ -4,6 +4,7 @@
 #include"Circle.h"
 #include"Rectangle.h"
 #include"Square.h"
+#include"Triangle.h"
 #include<vector>
 
 using std::vector;

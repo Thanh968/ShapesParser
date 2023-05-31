@@ -15,7 +15,9 @@ int main() {
 			throw ex;
 		}
 
+		cout << endl;
 		ShapeTextDataProvider::displayReadInfo(numberOfShapes, numberOfReadedShape, linesOfString);
+		cout << endl << "Bang danh sach cac doi tuong da duoc doc" << endl;
 		list->sortByArea();
 		list->displayColumn();
 

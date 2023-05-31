@@ -35,6 +35,8 @@
     <ClInclude Include="ShapeVector.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="SquareParser.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleParser.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
@@ -53,6 +55,8 @@
     <ClCompile Include="ShapeVector.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="SquareParser.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Shapes.txt" />

@@ -4,6 +4,7 @@
 #include"CircleParser.h"
 #include"RectangleParser.h"
 #include"SquareParser.h"
+#include"TriangleParser.h"
 #include<map>
 
 using std::map;

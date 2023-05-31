@@ -102,8 +102,8 @@ void Rectangle::outputColumn() {
 	area = area.substr(0, pos + 3);
 
 	cout << "|" << left << setw(20) << setfill(' ') << "Hinh chu nhat"
-		<< "| Dai=" << setw(8) << setfill(' ') << length
-		<< ", rong=" << setw(7) << setfill(' ') << width
+		<< "| Dai=" << setw(9) << setfill(' ') << length
+		<< ", rong=" << setw(8) << setfill(' ') << width
 		<< "| chu vi=" << setw(8) << setfill(' ') << perimeter
 		<< "| dien tich=" << setw(8) << setfill(' ') << area;
 }

@@ -76,7 +76,7 @@ void Circle::outputColumn() {
 	area = area.substr(0, pos + 3);
 
 	cout << "|" << left << setw(20) << setfill(' ') << "Hinh tron"
-		<< "| ban kinh=" << setw(17) << setfill(' ') << radius
+		<< "| ban kinh=" << setw(19) << setfill(' ') << radius
 		<< "| chu vi=" << setw(8) << setfill(' ') << perimeter
 		<< "| dien tich=" << setw(8) << setfill(' ') << area;
 }
