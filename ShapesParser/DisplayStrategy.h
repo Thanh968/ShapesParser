@@ -1,4 +1,4 @@
-#ifndef DISPLAY_STRATEGY_H
+﻿#ifndef DISPLAY_STRATEGY_H
 #define DISPLAY_STRATEGY_H
 
 #include"Circle.h"
@@ -9,7 +9,10 @@
 using std::vector;
 using std::shared_ptr;
 
-class DisplayStrategy:public Object{
+/// <summary>
+/// Interface cho các các hiển thị danh sách
+/// </summary>
+class DisplayStrategy:public  Object{
 public:
 	virtual ~DisplayStrategy() = default;
 	virtual void displayList(vector<Shape*>& list) const = 0;

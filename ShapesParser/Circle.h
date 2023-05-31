@@ -1,4 +1,4 @@
-#ifndef CIRCLE_H
+﻿#ifndef CIRCLE_H
 #define CIRCLE_H
 
 #include"Shape.h"
@@ -8,16 +8,20 @@ class Circle: public Shape {
 private:
 	double _radius;
 public:
+	//	CONSTRUCTOR
 	Circle();
 	Circle(double) noexcept(false);
 public:
+	// GETTER AND SETTER
+	double radius();
+	void setRadius(double radius) noexcept(false);
+public:
+	//	METHOD
 	double area();
 	double perimeter();
 	void outputColumn();
 	void outputLine();
 	string toString();
-public:
-	Circle& operator=(const Circle& other);
 };
 
 #endif // !CIRCLE_H

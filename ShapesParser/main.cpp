@@ -17,14 +17,8 @@ int main() {
 
 		ShapeTextDataProvider::displayReadInfo(numberOfShapes, numberOfReadedShape, linesOfString);
 		list->sortByArea();
-		list->displayLine();
+		list->displayColumn();
 
-		try {
-			ShapeTextDataProvider::write(*list, "output.txt");
-		}
-		catch (exception& ex) {
-			throw ex;
-		}
 	}
 	catch (exception& ex) {
 		cout << "Thong tin loi: " << ex.what() << endl;

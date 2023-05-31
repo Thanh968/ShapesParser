@@ -1,4 +1,4 @@
-#ifndef PARSER_FACTORY_H
+﻿#ifndef PARSER_FACTORY_H
 #define PARSER_FACTORY_H
 
 #include"CircleParser.h"
@@ -9,6 +9,9 @@
 using std::map;
 using std::shared_ptr;
 
+/// <summary>
+/// Lớp xác định hàm parse phù hợp dùng Factory Design Pattern
+/// </summary>
 
 class ParserFactory: Object {
 private:

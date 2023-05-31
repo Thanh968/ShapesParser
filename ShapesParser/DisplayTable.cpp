@@ -1,6 +1,9 @@
 ﻿#include"DisplayTable.h"
 
-// Cài đặt hàm displayList sao cho kết quả in ra màn hình là dạng bảng
+/// <summary>
+/// Phương thức với chức năng in danh sách các hình ra dưới dạng bảng
+/// </summary>
+/// <param name="list">Danh sách chứa các hình</param>
 void DisplayTable::displayList(vector<Shape*>& list) const {
 	int n = list.size();
 
@@ -11,7 +14,10 @@ void DisplayTable::displayList(vector<Shape*>& list) const {
 	}
 }
 
-// Cài đặt hàm kế thừa từ Object
+/// <summary>
+/// Phương thức với chức năng trả về tên lớp.
+/// </summary>
+/// <returns>chuỗi chứa tên lớp là DiaplayTable</returns>
 string DisplayTable::toString() {
 	string result = "DiaplayTable";
 	return result;
