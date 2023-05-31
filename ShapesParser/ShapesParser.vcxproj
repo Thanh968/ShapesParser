@@ -59,7 +59,8 @@
     <ClCompile Include="TriangleParser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Shapes.txt" />
+    <Text Include="readme.txt" />
+    <Text Include="shapes.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

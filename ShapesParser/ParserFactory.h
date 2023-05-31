@@ -10,9 +10,6 @@
 using std::map;
 using std::shared_ptr;
 
-/// <summary>
-/// Lớp xác định hàm parse phù hợp dùng Factory Design Pattern
-/// </summary>
 
 class ParserFactory: Object {
 private:

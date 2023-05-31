@@ -7,9 +7,7 @@
 
 using std::ifstream;
 using std::ofstream;
-/// <summary>
-/// Khai báo lớp đọc và ghi file chứa danh sách các hình
-/// </summary>
+
 class ShapeTextDataProvider {
 public:
 	static void read(ShapeVector& dest, string filename, int& numberOfShapes, int& numberOfReadedShape, vector<string>& linesOfData)  noexcept(false);

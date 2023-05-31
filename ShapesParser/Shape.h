@@ -3,9 +3,6 @@
 
 #include"Object.h"
 
-/// <summary>
-/// Interface của các lớp hình
-/// </summary>
 class Shape:public Object {
 public:
 	virtual double area() = 0;

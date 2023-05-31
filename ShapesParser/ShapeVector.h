@@ -14,27 +14,28 @@ private:
 	static ShapeVector* _instance;
 	vector<Shape*> _list;
 private:
-	// Đặt hàm tạo mặc định vào trong phạm vi private để không thể bị gọi tuy tiện trong chương trình
+	// PRIVATE DEFAULT CONTRUCTOR
 	ShapeVector();
 public:
-	// Cài đặt các hàm getter
+	// GETTER AND SETTER
 	static ShapeVector* getInstance();
 	vector<Shape*> list() const;
 	int size();
 public:
-	// Huỷ hàm tạo sao chép 
+	// DELETE COPY CONSTRUCTOR
 	ShapeVector(const ShapeVector& other) = delete;
 public:
-	//Cài đặt một số hàm chức năng
+	//	METHOD
 	void push_back( Shape*& value);
 	void displayColumn();
 	void displayLine();
 	void sortByArea();
+	void sortByPerimeter();
 	string toString();
 public:
-	// Nạp chồng toán tử
+	// OVERLOAD OPERATOR
 	Shape* operator[](int pos) noexcept(false);
-	//Huỷ toán tử sao chép
+	//	DELETE COPY OPERATOR
 	ShapeVector& operator=(const ShapeVector& other) = delete;
 };
 

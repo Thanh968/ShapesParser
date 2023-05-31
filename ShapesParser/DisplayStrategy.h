@@ -10,9 +10,6 @@
 using std::vector;
 using std::shared_ptr;
 
-/// <summary>
-/// Interface cho các các hiển thị danh sách
-/// </summary>
 class DisplayStrategy:public  Object{
 public:
 	virtual ~DisplayStrategy() = default;

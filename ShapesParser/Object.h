@@ -22,9 +22,6 @@ using std::swap;
 using std::setprecision;
 using std::fixed;
 
-/// <summary>
-/// Interface của tất cả class trong chương trình
-/// </summary>
 class Object {
 public:
 	virtual string toString() = 0;

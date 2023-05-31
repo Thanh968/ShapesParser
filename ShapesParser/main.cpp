@@ -9,7 +9,7 @@ int main() {
 		vector<string> linesOfString;
 
 		try {
-			ShapeTextDataProvider::read(*list, "Shapes.txt", numberOfShapes, numberOfReadedShape, linesOfString);
+			ShapeTextDataProvider::read(*list, "shapes.txt", numberOfShapes, numberOfReadedShape, linesOfString);
 		}
 		catch (exception& ex) {
 			throw ex;

@@ -1,4 +1,4 @@
-12
+13
 Triangle: a=12.3,b=5.6,c=9.4
 Square: a=12
 Circle: r=17
@@ -9,5 +9,6 @@ Circle: r=5
 Square: a=8
 Rectangle: w=4, h=23
 Square: a=12.5d
-Circle: r=12.6ad
+Circle: r=-12.6
 Triangle: a=12d,b=16x,c=15z
+Elipse: a=5,b=10

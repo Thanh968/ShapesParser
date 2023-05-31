@@ -48,13 +48,13 @@ void ShapeTextDataProvider::read(ShapeVector& dest, string filename, int& number
 			stringstream in(buffer);
 
 			getline(in, type, ':');
-			getline(in, data);
 
 			shared_ptr<IParser> parser = factory.select(type);
 
 			if (parser == nullptr) {
 				throw exception("Du lieu ve hinh nay chua duoc cap nhat");
 			}
+			getline(in, data);
 
 			Shape* item = parser->parse(stringstream(data));
 			dest.push_back(item);
